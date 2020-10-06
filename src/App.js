@@ -1,24 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Clock from "./components/Clock";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Clock city="Brisbane" timeZone="Australia/Brisbane" />
+      <Clock city="Taipei" timeZone="Asia/Taipei" />
+      <Clock city="Paris" timeZone="Europe/Paris" />
+      <Clock city="Los Angeles" timeZone="America/Los_Angeles" />
     </div>
   );
 }
